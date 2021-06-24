@@ -36,155 +36,76 @@
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Column="0" Grid.Row="0" Margin="10,10,10,10" Grid.ColumnSpan="4" FontSize="60" TextAlignment="Right" Background="{x:Null}">
+        <TextBox x:Name="txtDisp" Grid.Column="0" Grid.Row="0" Margin="10,10,10,10" Grid.ColumnSpan="4" FontSize="60" TextAlignment="Right" Background="{x:Null}">
             <TextBox.BorderBrush>
-                <SolidColorBrush Color="#FF1C388B" Opacity="0"/>
+                <SolidColorBrush  Opacity="0"/>
             </TextBox.BorderBrush> 0
         </TextBox>
 
 
-        <Button Grid.Column="0" Grid.Row="1" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1D0D0D" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> MC
+        <Button x:Name="btnClearEntry" Grid.Column="0" Grid.Row="1" Style="{StaticResource NormalButtonStyle}" Click="btnClearEntry_Click">
+             CE
         </Button>
-        <Button Grid.Column="1" Grid.Row="1" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1F1010" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> M+
+        <Button x:Name="btnClear" Grid.Column="1" Grid.Row="1" Style="{StaticResource NormalButtonStyle}" Click="btnClear_Click">
+             C
         </Button>
-        <Button Grid.Column="2" Grid.Row="1" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1F0F0F" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> /
+        <Button x:Name="btnDivide" Grid.Column="3" Grid.Row="1" Style="{StaticResource NormalButtonStyle}" Click="btnDivide_Click">
+             /
         </Button>
-        <Button Grid.Column="3" Grid.Row="1" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1F0F0F" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> *
+        <Button x:Name="btnTimes" Grid.Column="3" Grid.Row="2" Style="{StaticResource NormalButtonStyle}" Click="btnTimes_Click">
+             *
         </Button>
 
-        <Button Grid.Column="0" Grid.Row="2" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1E0E0E" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 7
+        <Button x:Name="btn7" Grid.Column="0" Grid.Row="2" Style="{StaticResource NormalButtonStyle}" Click="btn7_Click">
+             7
         </Button>
-        <Button Grid.Column="1" Grid.Row="2" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1E0E0E" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 8
+        <Button x:Name="btn8" Grid.Column="1" Grid.Row="2" Style="{StaticResource NormalButtonStyle}" Click="btn8_Click">
+             8
         </Button>
-        <Button Grid.Column="2" Grid.Row="2" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1E0E0E" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 9
+        <Button x:Name="btn9" Grid.Column="2" Grid.Row="2" Style="{StaticResource NormalButtonStyle}" Click="btn9_Click">
+             9
         </Button>
-        <Button Grid.Column="3" Grid.Row="2" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959"/>
-                    <GradientStop Color="#FF1B0B0B" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> -
+        <Button x:Name="bntMinus" Grid.Column="3" Grid.Row="3" Style="{StaticResource NormalButtonStyle}" Click="bntMinus_Click">
+             -
         </Button>
 
-        <Button Grid.Column="0" Grid.Row="3" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1B0A0A" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 4
+        <Button x:Name="btn4" Grid.Column="0" Grid.Row="3" Style="{StaticResource NormalButtonStyle}" Click="btn4_Click">
+             4
         </Button>
-        <Button Grid.Column="1" Grid.Row="3" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1A0909" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 5
+        <Button x:Name="btn5" Grid.Column="1" Grid.Row="3" Style="{StaticResource NormalButtonStyle}" Click="btn5_Click">
+             5
         </Button>
-        <Button Grid.Column="2" Grid.Row="3" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF1B0A0A" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 6
+        <Button x:Name="btn6" Grid.Column="2" Grid.Row="3" Style="{StaticResource NormalButtonStyle}" Click="btn6_Click">
+             6
         </Button>
-        <Button Grid.Column="3" Grid.Row="3" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF190808" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> +
+        <Button x:Name="btnPlus" Grid.Column="3" Grid.Row="4" Style="{StaticResource NormalButtonStyle}" Click="btnPlus_Click">
+            +
         </Button>
 
-        <Button Grid.Column="0" Grid.Row="4" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF190808" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 1
+        <Button x:Name="btn1" Grid.Column="0" Grid.Row="4" Style="{StaticResource NormalButtonStyle}" Click="btn1_Click">
+             1
         </Button>
-        <Button Grid.Column="1" Grid.Row="4" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF190808" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 2
+        <Button x:Name="btn2" Grid.Column="1" Grid.Row="4" Style="{StaticResource NormalButtonStyle}" Click="btn2_Click">
+             2
         </Button>
-        <Button Grid.Column="2" Grid.Row="4" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF190808" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 3
+        <Button x:Name="btn3" Grid.Column="2" Grid.Row="4" Style="{StaticResource NormalButtonStyle}" Click="btn3_Click">
+             3
         </Button>
-        <Button Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" Style="{StaticResource EqualButtonStyle}" Foreground="White" BorderBrush="#FFBB3232" Background="#FF1B5757">
+        <Button x:Name="btnEquals" Grid.Column="3" Grid.Row="5"  Style="{StaticResource EqualButtonStyle}" Foreground="White" BorderBrush="#FFBB3232" Background="#FF1B5757" Click="btnEquals_Click">
              =
         </Button>
 
-        <Button Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF595959" Offset="0"/>
-                    <GradientStop Color="#FF160404" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> 0
+        <Button x:Name="btn0" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="1" Style="{StaticResource NormalButtonStyle}" Click="btn0_Click">
+             0
         </Button>
-        <Button Grid.Column="2" Grid.Row="5" Style="{StaticResource NormalButtonStyle}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF4F4C4C" Offset="0"/>
-                    <GradientStop Color="#FF180707" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background> .
+        <Button x:Name="btnPosNeg" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="1" Style="{StaticResource NormalButtonStyle}" Click="btnPosNeg_Click" >
+             +-
+        </Button>
+        <Button x:Name="btnBackspace" Grid.Column="2" Grid.Row="1" Style="{StaticResource NormalButtonStyle}" Click="btnBackspace_Click">
+             &lt;=
+        </Button>
+        <Button x:Name="btnPoint" Grid.Column="2" Grid.Row="5" Style="{StaticResource NormalButtonStyle}" Click="btnPoint_Click" >
+           .
         </Button>
     </Grid>
 </Window>
