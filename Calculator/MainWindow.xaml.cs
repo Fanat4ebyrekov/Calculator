@@ -271,9 +271,6 @@ namespace Calculator
 
         }
 
-        private void btnPoint_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
+        
     }
 }

@@ -104,8 +104,6 @@
         <Button x:Name="btnBackspace" Grid.Column="2" Grid.Row="1" Style="{StaticResource NormalButtonStyle}" Click="btnBackspace_Click">
              &lt;=
         </Button>
-        <Button x:Name="btnPoint" Grid.Column="2" Grid.Row="5" Style="{StaticResource NormalButtonStyle}" Click="btnPoint_Click" >
-           .
-        </Button>
+        
     </Grid>
 </Window>
